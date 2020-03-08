@@ -22,14 +22,21 @@ int main(int argc, char* argv[]){
     for(int i = 1; i < argc; i++){
       array[i - 1] = atoi(argv[i]);
     }
-	Problema* problema = new QuickSortP(array);
-	Solucion* solucion = new QuickSortS();
-	Framework* framework = new Framework();
+	Problema* problemaQ = new QuickSortP(array);
+	Solucion* solucionQ = new QuickSortS();
+	Framework* frameworkQ = new Framework();
+	Problema* problemaM = new MergesortP(array);
+	Solucion* solucionM = new MergesortS();
+	Framework* frameworkM = new Framework();
 
 
-	framework->divideyVenceras(problema, solucion);
+	frameworkM->divideyVenceras(problemaM, solucionM);
 	cout << "\nResultado:" << endl;
-	solucion->resolver();
+	solucionM->resolver();
+
+	frameworkQ->divideyVenceras(problemaQ, solucionQ);
+	cout << "\nResultado:" << endl;
+	solucionQ->resolver();
 	}
 };
 

@@ -22,4 +22,3 @@ void Framework::divideyVenceras(Problema* p, Solucion* s){
 		s->mezcla(subSoluciones);
 	}
 };
-

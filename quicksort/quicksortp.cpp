@@ -42,7 +42,6 @@ pair<Problema*,Problema*> QuickSortP::descomponer() {
 	subProblemas.first = new QuickSortP(arrayAux1);
     subProblemas.second = new QuickSortP(arrayAux2);
 	return subProblemas;
-
 }
 
 void QuickSortP::solver(Solucion* s) {

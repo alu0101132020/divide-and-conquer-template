@@ -10,8 +10,9 @@ MergesortS::~MergesortS() {
 
 void MergesortS::resolver() {
 	for (int i = 0; i < array.size(); i++) {
-		std::cout << array[i] << "\n";
+		std::cout << "| " << array[i] << " | ";
 	}
+	std::cout << "\n";
 }
 
 void MergesortS::mezcla(pair<Solucion*,Solucion*> subSoluciones) {

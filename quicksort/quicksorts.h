@@ -16,6 +16,5 @@ public:
 
 private:
 	std::vector<int> array;
-
 };
 

@@ -11,15 +11,15 @@ QuickSortS::~QuickSortS() {
 
 void QuickSortS::resolver() {
 	for (int i = 0; i < array.size(); i++) {
-		std::cout << array[i] << "\n";
+		std::cout << "| " << array[i] << " | ";
 	}
+	std::cout << "\n";
 }
 
 void QuickSortS::mezcla(pair<Solucion*,Solucion*> subSoluciones) {
 	std::vector<int> leftArray = ((QuickSortS*)subSoluciones.first)->array;
 	std::vector<int> rightArray = ((QuickSortS*)subSoluciones.second)->array;
 	array.resize(leftArray.size() + rightArray.size());
-	int j = 0;
 	int k = 0;
 	for (int i = 0; i < leftArray.size(); i++){
 		array[k] = leftArray[i];
