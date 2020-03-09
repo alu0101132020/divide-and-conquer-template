@@ -1,26 +1,26 @@
-main.o: main.cpp framework/Framework.h framework/Problema.h \
- framework/Solucion.h mergesort/mergesortP.h \
- mergesort/../framework/Problema.h mergesort/mergesorts.h \
- mergesort/../framework/Solucion.h quicksort/quicksortp.h \
- quicksort/../framework/Problema.h quicksort/quicksorts.h \
- quicksort/../framework/Solucion.h
-Framework.o: framework/Framework.cpp framework/Framework.h \
- framework/Problema.h framework/Solucion.h
-Problema.o: framework/Problema.cpp framework/Problema.h \
- framework/Solucion.h
-Solucion.o: framework/Solucion.cpp framework/Solucion.h
-FibonacciP.o: examples/FibonacciP.cpp examples/FibonacciP.h \
- examples/../framework/Problema.h examples/../framework/Solucion.h \
- examples/FibonacciS.h examples/../framework/Solucion.h
-FibonacciS.o: examples/FibonacciS.cpp examples/FibonacciS.h \
- examples/../framework/Solucion.h
+main.o: main.cpp framework/framework.h framework/problema.h \
+ framework/solucion.h mergesort/mergesortp.h \
+ mergesort/../framework/problema.h mergesort/mergesorts.h \
+ mergesort/../framework/solucion.h quicksort/quicksortp.h \
+ quicksort/../framework/problema.h quicksort/quicksorts.h \
+ quicksort/../framework/solucion.h
+framework.o: framework/framework.cpp framework/framework.h \
+ framework/problema.h framework/solucion.h
+problema.o: framework/problema.cpp framework/problema.h \
+ framework/solucion.h
+solucion.o: framework/solucion.cpp framework/solucion.h
+fibonaccip.o: examples/fibonaccip.cpp examples/fibonaccip.h \
+ examples/../framework/problema.h examples/../framework/solucion.h \
+ examples/fibonaccis.h examples/../framework/solucion.h
+fibonaccis.o: examples/fibonaccis.cpp examples/fibonaccis.h \
+ examples/../framework/solucion.h
 mergesortp.o: mergesort/mergesortp.cpp mergesort/mergesortp.h \
- mergesort/../framework/Problema.h mergesort/../framework/Solucion.h \
- mergesort/mergesorts.h mergesort/../framework/Solucion.h
+ mergesort/../framework/problema.h mergesort/../framework/solucion.h \
+ mergesort/mergesorts.h mergesort/../framework/solucion.h
 mergesorts.o: mergesort/mergesorts.cpp mergesort/mergesorts.h \
- mergesort/../framework/Solucion.h
+ mergesort/../framework/solucion.h
 quicksortp.o: quicksort/quicksortp.cpp quicksort/quicksortp.h \
- quicksort/../framework/Problema.h quicksort/../framework/Solucion.h \
- quicksort/quicksorts.h quicksort/../framework/Solucion.h
+ quicksort/../framework/problema.h quicksort/../framework/solucion.h \
+ quicksort/quicksorts.h quicksort/../framework/solucion.h
 quicksorts.o: quicksort/quicksorts.cpp quicksort/quicksorts.h \
- quicksort/../framework/Solucion.h
+ quicksort/../framework/solucion.h

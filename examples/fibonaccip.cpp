@@ -1,5 +1,5 @@
 
-#include "FibonacciP.h"
+#include "fibonaccip.h"
 
 FibonacciP::FibonacciP(int n) : Problema::Problema() {
 	_n = n;

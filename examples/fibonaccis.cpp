@@ -1,6 +1,6 @@
 
 #include<iostream>
-#include "FibonacciS.h"
+#include "fibonaccis.h"
 
 FibonacciS::FibonacciS() : Solucion::Solucion() {
 }

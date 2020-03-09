@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../framework/Solucion.h"
+#include "../framework/solucion.h"
 #include <vector>
 
 class MergesortS: public Solucion {

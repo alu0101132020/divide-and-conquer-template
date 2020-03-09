@@ -2,8 +2,8 @@
 #ifndef FIBONACCIP_H_
 #define FIBONACCIP_H_
 
-#include "../framework/Problema.h"
-#include "FibonacciS.h"
+#include "../framework/problema.h"
+#include "fibonaccis.h"
 class FibonacciP: public Problema {
 public:
 	FibonacciP(int);

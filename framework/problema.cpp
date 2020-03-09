@@ -1,5 +1,5 @@
 
-#include "Problema.h"
+#include "problema.h"
 
 Problema::Problema() {
 }

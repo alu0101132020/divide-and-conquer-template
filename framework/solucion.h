@@ -1,9 +1,9 @@
 #ifndef SOLUCION_H_
 #define SOLUCION_H_
 
-#include<vector>
+#include <vector>
 #include <utility>
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Solucion {

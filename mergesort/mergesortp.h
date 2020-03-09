@@ -1,6 +1,6 @@
 
 #pragma once
-#include "../framework/Problema.h"
+#include "../framework/problema.h"
 #include "mergesorts.h"
 
 class MergesortP: public Problema {

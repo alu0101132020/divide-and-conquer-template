@@ -2,7 +2,7 @@
 #ifndef FIBONACCIS_H_
 #define FIBONACCIS_H_
 
-#include "../framework/Solucion.h"
+#include "../framework/solucion.h"
 
 class FibonacciS: public Solucion {
 public:

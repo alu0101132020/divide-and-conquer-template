@@ -1,7 +1,8 @@
 #pragma once
 
-#include "../framework/Problema.h"
+#include "../framework/problema.h"
 #include "quicksorts.h"
+#include <cmath>
 
 class QuickSortP: public Problema {
 public:

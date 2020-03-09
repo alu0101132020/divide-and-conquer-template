@@ -1,5 +1,5 @@
 
-#include "Solucion.h"
+#include "solucion.h"
 
 Solucion::Solucion() {
 }

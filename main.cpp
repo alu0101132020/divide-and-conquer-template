@@ -5,9 +5,9 @@
 #include<iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include"framework/Framework.h"
-#include"mergesort/mergesortP.h"
-#include"mergesort/mergesortS.h"
+#include"framework/framework.h"
+#include"mergesort/mergesortp.h"
+#include"mergesort/mergesorts.h"
 #include"quicksort/quicksortp.h"
 #include"quicksort/quicksorts.h"
 using namespace std;
