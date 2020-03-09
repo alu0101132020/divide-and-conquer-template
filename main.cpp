@@ -14,13 +14,15 @@ using namespace std;
 
 
 int main(int argc, char* argv[]){
-	if (argc < 2) {
+	if (argc < 2 /*&& atoi(argv[1]) < 0*/) {
         cout << "\nNúmero de parametros incorrecto. Encontrado " << argc-1 << " requerido 1."<< endl;
         exit(-1);
     } else {
-    std::vector<int> array(argc-1);
-    for(int i = 1; i < argc; i++){
-      array[i - 1] = atoi(argv[i]);
+	srand (time(NULL));
+    std::vector<int> array(atoi(argv[1]));
+    for(int i = 0; i < array.size(); i++){
+      array[i] = rand() % 10000;
+	  std::cout << "| " << array[i] << " | ";
     }
 	Problema* problemaQ = new QuickSortP(array);
 	Solucion* solucionQ = new QuickSortS();
