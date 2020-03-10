@@ -9,8 +9,18 @@ MergesortS::~MergesortS() {
 }
 
 void MergesortS::resolver() {
+	int lastElement = -1;
+	bool ordenado = true;
 	for (int i = 0; i < array.size(); i++) {
 		std::cout << "| " << array[i] << " | ";
+		if (lastElement > array[i]) {
+			ordenado = false;
+		}
+	}
+	if (ordenado) {
+		std::cout << "El vector está ordenado.\n";
+	} else {
+		std::cout << "El vecto está desordenado.\n";
 	}
 	std::cout << "\n";
 }

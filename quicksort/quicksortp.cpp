@@ -14,9 +14,9 @@ bool QuickSortP::isCasoMinimo() {
 }
 
 pair<Problema*,Problema*> QuickSortP::descomponer() {
-	int leftIter = 0;
+	int leftIter = 1;
 	int rightIter = array.size() - 1;
-	int pivot = array[rightIter / 2];
+	int pivot = array[0];
 	while (leftIter <= rightIter) {
 		while (array[rightIter] > pivot) {
 			rightIter--;
@@ -32,13 +32,16 @@ pair<Problema*,Problema*> QuickSortP::descomponer() {
 		leftIter++;
 		}
 	}
+	int aux = array[0];
+	array[0] = array[rightIter];
+	array[rightIter] = aux;
 	pair<Problema*,Problema*> subProblemas;
 	std::vector<int> arrayAux1;
 	std::vector<int> arrayAux2;
-	for(int i = 0; i <= (leftIter + rightIter) / 2; i++){
+	for(int i = 0; i < rightIter; i++){
     	arrayAux1.push_back(array[i]);
   	}
-  	for(int i = ((leftIter + rightIter) / 2) + 1; i < array.size(); i++){
+  	for(int i = rightIter + 1; i < array.size(); i++){
     	arrayAux2.push_back(array[i]);
   	}
 	subProblemas.first = new QuickSortP(arrayAux1);
